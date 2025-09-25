@@ -1,7 +1,7 @@
 /* 
 Author: Mos
 Date: 2025-09-25
-Version: 0.4
+Version: 0.5
 Project Name: Miniräknare
 */
 console.log("Empowered by: MoS")
@@ -18,6 +18,10 @@ for(button of btnList) {
     button.onclick = () => {
         if(showIndisplay.textContent === "0"){
             showIndisplay.textContent = ""
+        }else if(showIndisplay.textContent === "-- 2-long --"){
+           showIndisplay.textContent = ""
+        }else if(showIndisplay.textContent === "Ops!"){
+           showIndisplay.textContent = ""
         } 
         showIndisplay.textContent += btn.textContent
     }
@@ -35,8 +39,11 @@ result.addEventListener("click", () => {
     try {
         const ekvResult = eval(toCalculate)
         showIndisplay.textContent = ekvResult
+        if (ekvResult.toString().length >= 10) {
+            showIndisplay.textContent = "-- 2-long --"
+        }
     } catch (error) {
-        showIndisplay.textContent = "Ops! DetBlevFel"
+        showIndisplay.textContent = "Ops!"
     }
 })
 
