@@ -1,7 +1,7 @@
 /* 
 Author: Mos
 Date: 2025-09-25
-Version: 0.3
+Version: 0.4
 Project Name: Miniräknare
 */
 console.log("Empowered by: MoS")
