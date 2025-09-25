@@ -1,7 +1,7 @@
 /* 
 Author: Mos
 Date: 2025-09-25
-Version: 0.5
+Version: 0.6
 Project Name: Miniräknare
 */
 
@@ -21,6 +21,11 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #eee;
+    transition: all 0.3s;
+}
+body.darkMcss {
+  background: #444;
+  color: white;
 }
 #container{
 }

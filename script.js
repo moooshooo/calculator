@@ -1,7 +1,7 @@
 /* 
 Author: Mos
 Date: 2025-09-25
-Version: 0.5
+Version: 0.6
 Project Name: Miniräknare
 */
 console.log("Empowered by: MoS")
@@ -72,3 +72,15 @@ async function getLastPush() {
 }
 
 getLastPush();
+
+
+//Dark mode skift.
+const changeBtn = document.getElementById("darkM")
+
+changeBtn.addEventListener("click",() => {
+    if (document.body.classList.toggle("darkMcss")) {
+        changeBtn.textContent = "☀️ Light mode"
+    }else {
+    changeBtn.textContent = "🌙 Dark mode"
+  }
+})
