@@ -11,6 +11,7 @@ const btnList = document.getElementsByClassName("btnInput")
 const showIndisplay = document.getElementById("Display")
 const result = document.getElementById("resultBtn")
 const back = document.getElementById("back")
+const dateStamp = document.getElementById("dateStamp")
 
 for(button of btnList) {
     const btn = button 
@@ -21,8 +22,8 @@ for(button of btnList) {
         showIndisplay.textContent += btn.textContent
     }
 }
-
-console.log(showIndisplay.textContent)
+/* 
+console.log(showIndisplay.textContent) */
 
 const allClear = document.getElementById("ac")
 allClear.onclick = () =>{
@@ -45,5 +46,5 @@ back.addEventListener("click", () => {
 })
 
 //Leker med Datum
-/* const datumStamp = new Date()
- */
+const showDateStamp = new Date()
+dateStamp.textContent = showDateStamp.toLocaleString("sv-SE")
