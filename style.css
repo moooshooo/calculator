@@ -17,40 +17,58 @@ body {
     font-weight: 400;
     font-style: normal;
     min-height: 100vh;
-    background-color: #eee;
-}
-#container{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #eee;
+}
+#container{
 }
 
 #calculator {
-    background-color: #333;
-    border-radius: 12px;
+    background-color: #111;
+    border-radius: 20px;
     padding: 20px;
 }
 #Display {
-    background-color: #eee;
+    background-color: #aaa;
     height: 50px;
-    width: 300px;
     margin: 10px;
     padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    overflow: hidden;
+    width: 200px;
 }
 #btnSrow {
+    margin: 50px 5px 5px;
 }
 .row {
+    display: flex;
+    justify-content: start;
+    flex-direction: row-reverse;
+    gap: 5px;
 }
 
 .btn {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #eee;
+    width: 60px;
+    height: 60px;
+    background-color: #2e2e2e;
     font-size: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
+    clip-path: circle();
+    color: #EEE;
+    cursor: pointer;
+}
+#resultbtn, #plus, #minus, #multiplication, #divided {
+    background-color: #ff8800;
+    cursor: pointer;
+}
+#percent, #ac, #back{
+    background-color: #888;
 }
 #powered {
     text-align: center;
