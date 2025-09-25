@@ -2,12 +2,57 @@
 Author: Mos
 Date: 2025-09-25
 Version: 0.1
+Project Name: Miniräknare
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap');
+
 * {
-    margin: 0;
+    margin: 0;/* 
+    border: solid 1px red; */
 }
 
 body {
-    
+    font-family: "Cabin Sketch", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    background-color: #eee;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    background-color: #333;
+    border-radius: 12px;
+    padding: 20px;
+}
+#Display {
+    background-color: #eee;
+    height: 50px;
+    width: 300px;
+    margin: 10px;
+    padding: 10px 20px;
+}
+#btnSrow {
+}
+.row {
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #eee;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#powered {
+    text-align: center;
+    display: block;
 }
