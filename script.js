@@ -53,5 +53,22 @@ back.addEventListener("click", () => {
 })
 
 //Leker med Datum
-const showDateStamp = new Date()
-dateStamp.textContent = showDateStamp.toLocaleString("sv-SE")
+/* const showDateStamp = new Date()
+dateStamp.textContent = showDateStamp.toLocaleString("sv-SE") */
+
+
+//Funktion som hämtar sista push av denna repo
+
+async function getLastPush() {
+    const response = await fetch("https://api.github.com/repos/moooshooo/calculator");
+    const data = await response.json();
+
+    // "pushed_at" is an ISO timestamp
+    const lastPush = new Date(data.pushed_at);
+
+    // Format it for display
+    document.getElementById("lastUpdated").textContent =
+        "Last push to GitHub: " + lastPush.toLocaleString("sv-SE");
+}
+
+getLastPush();

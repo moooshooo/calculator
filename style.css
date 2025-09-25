@@ -87,3 +87,8 @@ body {
     margin: 10px auto;
     font-size: 10px;
 }
+
+#lastUpdated {
+    font-size: 10px;
+    text-align: center;
+}
