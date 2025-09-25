@@ -9,7 +9,7 @@ console.log("=================")
 
 const btnList = document.getElementsByClassName("btnInput")
 const showIndisplay = document.getElementById("Display")
-
+const result = document.getElementById("resultBtn")
 
 for(button of btnList) {
     const btn = button 
@@ -18,15 +18,23 @@ for(button of btnList) {
             showIndisplay.textContent = ""
         } 
         showIndisplay.textContent += btn.textContent
+
     }
 }
+
+console.log(showIndisplay.textContent)
 
 const allClear = document.getElementById("ac")
 allClear.onclick = () =>{
     showIndisplay.textContent = 0
 }
 
-const calculatorresult = document.getElementById("resultbtn")
-    result.onclick = () => {
-        const ekvation = btn.textContent += btn.textContent
+result.addEventListener("click", () => {
+    const toCalculate = showIndisplay.textContent
+    try {
+        const ekvResult = eval(toCalculate)
+        showIndisplay.textContent = ekvResult
+    } catch (error) {
+        showIndisplay.textContent = "Ops! DetBlevFel"
     }
+})

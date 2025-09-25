@@ -79,4 +79,5 @@ body {
 #powered {
     text-align: center;
     display: block;
+    margin: 10px auto;
 }
