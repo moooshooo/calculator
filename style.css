@@ -29,9 +29,10 @@ body {
     background-color: #111;
     border-radius: 20px;
     padding: 20px;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.6);
 }
 #Display {
-    background-color: #aaa;
+    background-color: #d2d2d2;
     height: 50px;
     margin: 10px;
     padding: 10px 20px;
@@ -40,6 +41,11 @@ body {
     font-size: 40px;
     overflow: hidden;
     width: 230px;
+    border: 2px solid #acacac;
+    box-shadow: -1px 1px 14px 0px rgba(0,0,0,0.75) inset;
+    /* Svart overlay med prickar */
+    background-image: radial-gradient(rgba(126, 126, 126, 0.7) 1px, transparent 1px);
+    background-size: 3px 3px; 
 }
 #btnSrow {
     margin: 50px 5px 5px;
