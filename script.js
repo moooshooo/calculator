@@ -10,6 +10,7 @@ console.log("=================")
 const btnList = document.getElementsByClassName("btnInput")
 const showIndisplay = document.getElementById("Display")
 const result = document.getElementById("resultBtn")
+const back = document.getElementById("back")
 
 for(button of btnList) {
     const btn = button 
@@ -36,4 +37,9 @@ result.addEventListener("click", () => {
     } catch (error) {
         showIndisplay.textContent = "Ops! DetBlevFel"
     }
+})
+
+//Slisar den sista siffran
+back.addEventListener("click", () => {
+    showIndisplay.textContent = showIndisplay.textContent.slice(0, -1)
 })
