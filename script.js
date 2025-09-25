@@ -1,7 +1,7 @@
 /* 
 Author: Mos
 Date: 2025-09-25
-Version: 0.1
+Version: 0.3
 Project Name: Miniräknare
 */
 console.log("Empowered by: MoS")
@@ -18,7 +18,6 @@ for(button of btnList) {
             showIndisplay.textContent = ""
         } 
         showIndisplay.textContent += btn.textContent
-
     }
 }
 
