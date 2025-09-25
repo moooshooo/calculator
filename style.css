@@ -39,7 +39,7 @@ body {
     justify-content: flex-end;
     font-size: 40px;
     overflow: hidden;
-    width: 200px;
+    width: 230px;
 }
 #btnSrow {
     margin: 50px 5px 5px;
@@ -48,7 +48,8 @@ body {
     display: flex;
     justify-content: start;
     flex-direction: row-reverse;
-    gap: 5px;
+    gap: 8px;
+    margin: 10px;
 }
 
 .btn {
@@ -62,6 +63,11 @@ body {
     clip-path: circle();
     color: #EEE;
     cursor: pointer;
+}
+#zero {
+    width: 120px;
+    clip-path:none;
+    border-radius: 25px;
 }
 #resultbtn, #plus, #minus, #multiplication, #divided {
     background-color: #ff8800;
