@@ -43,3 +43,7 @@ result.addEventListener("click", () => {
 back.addEventListener("click", () => {
     showIndisplay.textContent = showIndisplay.textContent.slice(0, -1)
 })
+
+//Leker med Datum
+/* const datumStamp = new Date()
+ */
